@@ -55,6 +55,7 @@ def inviter(account):
             invite_code = invite_link[i:len(invite_link)]
 
     r = requests.post("https://discord.com/api/v9/invites/{}".format(invite_code), headers=account.getHeaders())
+    print(r.json())
     if (r.status_code == 200):
         return True
     else:
@@ -63,7 +64,7 @@ def inviter(account):
 def leaver(account):
     channel_id = input("Введи айди канала(https://discord.com/channels/айди канала/не надо)")
     r = requests.delete(f"https://discord.com/api/v9/users/@me/guilds/{channel_id}", headers=account.getHeaders())
-
+    print(r.json())
     if(r.status_code == 204):
         return True
     else:
@@ -74,6 +75,7 @@ def leaver(account):
 def checker(account):
     response = requests.get(f'https://discordapp.com/api/v9/users/@me/library',
                    headers=account.getHeaders())
+    print(r.json())
     if "You need to verify your account in order to perform this action." in str(
             response.content) or "401: Unauthorized" in str(response.content):
         return False
@@ -85,7 +87,7 @@ def checker(account):
 def smile(account):
     smile_url = input("Введите ссылку на запрос нажатия на смайл ----->")
     r = requests.put(smile_url, headers = account.getHeaders())
-
+    print(r.json())
     if r.status_code == 204:
         return True
     else:
