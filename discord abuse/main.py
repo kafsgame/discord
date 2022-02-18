@@ -51,7 +51,7 @@ def make_accounts_from_tokens(proxy):
 def inviter(account):
     invite_link = input("Введите пригласительную ссылку ----->")
     for i in range(len(invite_link)):
-        if i == len(invite_link)-7:
+        if i == len(invite_link)-8:
             invite_code = invite_link[i:len(invite_link)]
 
     r = requests.post("https://discord.com/api/v9/invites/{}".format(invite_code), headers=account.getHeaders())
