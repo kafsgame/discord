@@ -128,8 +128,8 @@ if __name__ == '__main__':
         except Exception:
             print("Сука, эта хуйня разрывает соединение")
 
-    input("\n\n\nнажмите enter, чтобы вернуться в меню")
+        input("\n\n\nнажмите enter, чтобы вернуться в меню")
 
-    main()
+        main()
 
 main()
