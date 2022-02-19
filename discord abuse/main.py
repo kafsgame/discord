@@ -53,8 +53,27 @@ def inviter(account):
     for i in range(len(invite_link)):
         if i == len(invite_link)-8:
             invite_code = invite_link[i:len(invite_link)]
-
-    r = requests.post("https://discord.com/api/v9/invites/{}".format(invite_code), headers=account.getHeaders())
+    headers = {
+                ":authority": "discord.com",
+                ":method": "POST",
+                ":path": "/api/v9/invites/" + invite_code,
+                ":scheme": "https",
+                "accept": "*/*",
+                "accept-encoding": "gzip, deflate, br",
+                "accept-language": "en-US",
+                "Authorization": account.token,
+                "content-length": "0",
+                "origin": "https://discord.com",
+                'referer': 'https://discord.com/channels/@me',
+                "sec-fetch-dest": "empty",
+                "sec-fetch-mode": "cors",
+                "sec-fetch-site": "same-origin",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.600 Chrome/91.0.4472.106 Electron/13.1.4 Safari/537.36",
+                "x-context-properties": "eyJsb2NhdGlvbiI6Ikludml0ZSBCdXR0b24gRW1iZWQiLCJsb2NhdGlvbl9ndWlsZF9pZCI6Ijg3OTc4MjM4MDAxMTk0NjAyNCIsImxvY2F0aW9uX2NoYW5uZWxfaWQiOiI4ODExMDg4MDc5NjE0MTk3OTYiLCJsb2NhdGlvbl9jaGFubmVsX3R5cGUiOjAsImxvY2F0aW9uX21lc3NhZ2VfaWQiOiI4ODExOTkzOTI5MTExNTkzNTcifQ==",
+                "x-debug-options": "bugReporterEnabled",
+                "x-super-properties": "eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiRGlzY29yZCBDbGllbnQiLCJyZWxlYXNlX2NoYW5uZWwiOiJjYW5hcnkiLCJjbGllbnRfdmVyc2lvbiI6IjEuMC42MDAiLCJvc192ZXJzaW9uIjoiMTAuMC4yMjAwMCIsIm9zX2FyY2giOiJ4NjQiLCJzeXN0ZW1fbG9jYWxlIjoic2siLCJjbGllbnRfYnVpbGRfbnVtYmVyIjo5NTM1MywiY2xpZW50X2V2ZW50X3NvdXJjZSI6bnVsbH0="
+            }
+    r = requests.post("https://discord.com/api/v9/invites/{}".format(invite_code), headers=headers)
     print(r.json())
     if (r.status_code == 200):
         return True
