@@ -307,3 +307,205 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 ###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
 
 JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1645361796046	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofileszaaQu"
+1645361841729	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofileMyKnyD"
+1645361842304	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofileMyKnyD\\search.json.mozlz4", (void 0)))
+[Parent 10884, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1645361845123	Marionette	INFO	Listening on port 60609
+1645361845406	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645361854422	Marionette	INFO	Stopped listening on port 60609
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645361899488	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofileuGtfWv"
+1645361900013	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofileuGtfWv\\search.json.mozlz4", (void 0)))
+[Parent 8528, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1645361902902	Marionette	INFO	Listening on port 60714
+1645361903155	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645361911855	Marionette	INFO	Stopped listening on port 60714
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1645362009819	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofile55Npwr"
+1645362010343	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofile55Npwr\\search.json.mozlz4", (void 0)))
+1645362012968	Marionette	INFO	Listening on port 60848
+1645362013476	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645362166308	Marionette	INFO	Stopped listening on port 60848
+ram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofile6333D3"
+1645362080828	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofile6333D3\\search.json.mozlz4", (void 0)))
+[Parent 5932, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1645362083406	Marionette	INFO	Listening on port 60965
+1645362083488	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645362095077	Marionette	INFO	Stopped listening on port 60965
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645362230406	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofilehaeG11"
+1645362230976	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofilehaeG11\\search.json.mozlz4", (void 0)))
+1645362233656	Marionette	INFO	Listening on port 61122
+1645362234088	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645362240255	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1645362318534	Marionette	INFO	Stopped listening on port 61122
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645362329273	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofilekcRm3n"
+1645362329821	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofilekcRm3n\\search.json.mozlz4", (void 0)))
+1645362332710	Marionette	INFO	Listening on port 61246
+1645362332950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645362350144	Marionette	INFO	Stopped listening on port 61246
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645362398170	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofileQR44ZT"
+1645362398732	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofileQR44ZT\\search.json.mozlz4", (void 0)))
+1645362401307	Marionette	INFO	Listening on port 61353
+1645362401346	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645362408018	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1645362416039	Marionette	INFO	Stopped listening on port 61353
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645362429834	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofile2zev1o"
+1645362430408	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofile2zev1o\\search.json.mozlz4", (void 0)))
+1645362433135	Marionette	INFO	Listening on port 61435
+1645362433505	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645362471472	Marionette	INFO	Stopped listening on port 61435
+1645362541795	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofile895YqE"
+1645362542375	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofile895YqE\\search.json.mozlz4", (void 0)))
+1645362544915	Marionette	INFO	Listening on port 61572
+1645362545001	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645362569309	Marionette	INFO	Stopped listening on port 61572
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645362900035	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofile6GMB9f"
+1645362900616	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofile6GMB9f\\search.json.mozlz4", (void 0)))
+1645362903315	Marionette	INFO	Listening on port 61843
+1645362903715	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645362927849	Marionette	INFO	Stopped listening on port 61843
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645363556111	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofileZim4tE"
+1645363556754	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofileZim4tE\\search.json.mozlz4", (void 0)))
+[Parent 15236, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1645363559396	Marionette	INFO	Listening on port 62246
+1645363559781	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645363595976	Marionette	INFO	Stopped listening on port 62246
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645363734020	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofilePAxO3f"
+1645363734591	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofilePAxO3f\\search.json.mozlz4", (void 0)))
+1645363737433	Marionette	INFO	Listening on port 62420
+1645363737697	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645363754801	Marionette	INFO	Stopped listening on port 62420
+1645363797019	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofilebsXSeO"
+1645363797569	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofilebsXSeO\\search.json.mozlz4", (void 0)))
+1645363800144	Marionette	INFO	Listening on port 62526
+1645363800194	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645363821033	Marionette	INFO	Stopped listening on port 62526
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645363864389	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofileQt4dL5"
+1645363864957	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofileQt4dL5\\search.json.mozlz4", (void 0)))
+1645363867824	Marionette	INFO	Listening on port 62637
+1645363868062	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645363887553	Marionette	INFO	Stopped listening on port 62637
+1645364188925	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofilexZ0Ke4"
+1645364189496	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofilexZ0Ke4\\search.json.mozlz4", (void 0)))
+1645364192251	Marionette	INFO	Listening on port 62885
+1645364192603	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645364241625	Marionette	INFO	Stopped listening on port 62885
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645367263752	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofileK3M5i1"
+1645367266235	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofileK3M5i1\\search.json.mozlz4", (void 0)))
+1645367270495	Marionette	INFO	Listening on port 63201
+1645367270645	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645367288859	Marionette	INFO	Stopped listening on port 63201
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645367449683	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofilepTtWqB"
+1645367450235	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofilepTtWqB\\search.json.mozlz4", (void 0)))
+1645367452759	Marionette	INFO	Listening on port 56762
+1645367452861	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645367474473	Marionette	INFO	Stopped listening on port 56762
+1645369206371	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofileMh9xN8"
+1645369206942	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofileMh9xN8\\search.json.mozlz4", (void 0)))
+1645369209786	Marionette	INFO	Listening on port 57708
+1645369210041	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645369239633	Marionette	INFO	Stopped listening on port 57708

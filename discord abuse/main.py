@@ -2,6 +2,9 @@ import requests
 from account import Account
 from time import sleep
 from colorama import Fore
+import json
+from selenium import webdriver
+import os
 
 isProxy = input("нужны ли прокси?(y/n)")
 if isProxy=="y":
@@ -12,6 +15,11 @@ else:
     print("Для работы бота нужны токены от аккаунтов дискорда, которые должны будут находиться в файле под названием token.txt каждый токен должен находиться на новой строке")
 
 delay = int(input("Введите задержку между обработкой аккаунтов в целых секундах ----->"))
+def start_server(token):
+    f = open("captchatoken.txt", "w")
+    f.write(token)
+    f.close()
+    os.system("start aaa.bat")
 def make_accounts_from_tokens(proxy):
     accounts = []
 
@@ -49,36 +57,48 @@ def make_accounts_from_tokens(proxy):
     return accounts
 
 def inviter(account):
+    s = requests.Session()
     invite_link = input("Введите пригласительную ссылку ----->")
+    invite_code = ""
     for i in range(len(invite_link)):
         if i == len(invite_link)-8:
             invite_code = invite_link[i:len(invite_link)]
     headers = {
-                ":authority": "discord.com",
-                ":method": "POST",
-                ":path": "/api/v9/invites/" + invite_code,
-                ":scheme": "https",
-                "accept": "*/*",
-                "accept-encoding": "gzip, deflate, br",
-                "accept-language": "en-US",
-                "Authorization": account.token,
-                "content-length": "0",
-                "origin": "https://discord.com",
-                'referer': 'https://discord.com/channels/@me',
-                "sec-fetch-dest": "empty",
-                "sec-fetch-mode": "cors",
-                "sec-fetch-site": "same-origin",
-                "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.600 Chrome/91.0.4472.106 Electron/13.1.4 Safari/537.36",
-                "x-context-properties": "eyJsb2NhdGlvbiI6Ikludml0ZSBCdXR0b24gRW1iZWQiLCJsb2NhdGlvbl9ndWlsZF9pZCI6Ijg3OTc4MjM4MDAxMTk0NjAyNCIsImxvY2F0aW9uX2NoYW5uZWxfaWQiOiI4ODExMDg4MDc5NjE0MTk3OTYiLCJsb2NhdGlvbl9jaGFubmVsX3R5cGUiOjAsImxvY2F0aW9uX21lc3NhZ2VfaWQiOiI4ODExOTkzOTI5MTExNTkzNTcifQ==",
-                "x-debug-options": "bugReporterEnabled",
-                "x-super-properties": "eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiRGlzY29yZCBDbGllbnQiLCJyZWxlYXNlX2NoYW5uZWwiOiJjYW5hcnkiLCJjbGllbnRfdmVyc2lvbiI6IjEuMC42MDAiLCJvc192ZXJzaW9uIjoiMTAuMC4yMjAwMCIsIm9zX2FyY2giOiJ4NjQiLCJzeXN0ZW1fbG9jYWxlIjoic2siLCJjbGllbnRfYnVpbGRfbnVtYmVyIjo5NTM1MywiY2xpZW50X2V2ZW50X3NvdXJjZSI6bnVsbH0="
-            }
-    r = requests.post("https://discord.com/api/v9/invites/{}".format(invite_code), headers=headers)
+        "authorization": account.token,
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
+    }
+
+    r = s.post("https://discord.com/api/v9/invites/{}".format(invite_code), headers=headers)
     print(r.json())
     if (r.status_code == 200):
         return True
-    else:
-        return False
+    elif ('captcha_key' in r.json()):
+        captchaKey = r.json()['captcha_sitekey']
+        print(captchaKey)
+        start_server(captchaKey)
+        driver = webdriver.Firefox()
+        driver.get("http://localhost:5000")
+        print("пройдите капчу в открывшемся окне")
+        while True:
+            captcha = driver.find_element_by_xpath("/html/body/div[1]/iframe").get_attribute("data-hcaptcha-response")
+            if captcha != "":
+                break
+        f = open("end.txt", "w")
+        f.write("1")
+        f.close()
+        try:
+            driver.refresh()
+        except Exception:
+            pass
+        driver.quit()
+        r = s.post("https://discord.com/api/v9/invites/{}".format(invite_code), headers=headers, data={'captcha_key':captcha, 'captcha_sitekey':captchaKey, 'captcha_service': 'hcaptcha'})
+        print(r.json())
+        if(r.status_code == 200):
+            return True
+        else:
+            return False
+
+
 
 def leaver(account):
     channel_id = input("Введи айди канала(https://discord.com/channels/айди канала/не надо)")
@@ -115,40 +135,37 @@ def smile(account):
 if __name__ == '__main__':
     def main():
         action = int(input("Введите, что делать с аккаунтами:\n0-зайти на сервер по ссылке-приглашению  \n1-выйти из сервера   \n2-зайти на сервер и нажать на смайл   \n3-токен-чекер  \n----->"))
-        try:
-            if action == 0:
-                for account in make_accounts_from_tokens(isProxy):
-                    if inviter(account):
-                        print(Fore.GREEN + f"{account.token} - зашел")
-                    else:
-                        print(Fore.RED + f"{account.token} - не зашел")
-                    sleep(delay)
-            elif action == 1:
-                for account in make_accounts_from_tokens(isProxy):
-                    if leaver(account):
-                        print(Fore.GREEN + f"{account.token} - вышел")
-                    else:
-                        print(Fore.RED + f"{account.token} - не вышел")
-                    sleep(delay)
-            elif action == 2:
-                for account in make_accounts_from_tokens(isProxy):
-                    if smile(account):
-                        print(Fore.GREEN + f"{account.token} - нажал")
-                    else:
-                        print(Fore.RED + f"{account.token} - что-то не так")
-                    sleep(delay)
-            elif action == 3:
-                for account in make_accounts_from_tokens(isProxy):
-                    if checker(account):
-                        print(Fore.GREEN + f"{account.token} - жив")
-                    else:
-                        print(Fore.RED + f"{account.token} - мертв")
-                    sleep(delay)
-        except Exception:
-            print("Сука, эта хуйня разрывает соединение")
+        if action == 0:
+            for account in make_accounts_from_tokens(isProxy):
+                if inviter(account):
+                    print(Fore.GREEN + f"{account.token} - зашел")
+                else:
+                    print(Fore.RED + f"{account.token} - не зашел")
+                sleep(delay)
+        elif action == 1:
+            for account in make_accounts_from_tokens(isProxy):
+                if leaver(account):
+                    print(Fore.GREEN + f"{account.token} - вышел")
+                else:
+                    print(Fore.RED + f"{account.token} - не вышел")
+                sleep(delay)
+        elif action == 2:
+            for account in make_accounts_from_tokens(isProxy):
+                if smile(account):
+                    print(Fore.GREEN + f"{account.token} - нажал")
+                else:
+                    print(Fore.RED + f"{account.token} - что-то не так")
+                sleep(delay)
+        elif action == 3:
+            for account in make_accounts_from_tokens(isProxy):
+                if checker(account):
+                    print(Fore.GREEN + f"{account.token} - жив")
+                else:
+                    print(Fore.RED + f"{account.token} - мертв")
+                sleep(delay)
 
-        input("\n\n\nнажмите enter, чтобы вернуться в меню")
+        input(Fore.WHITE + "\n\n\nнажмите enter, чтобы вернуться в меню")
 
         main()
 
-main()
+    main()

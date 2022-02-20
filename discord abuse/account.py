@@ -1,5 +1,5 @@
 from random import randint
-import json
+
 
 
 def randstr(l):
