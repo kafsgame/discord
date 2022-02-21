@@ -114,7 +114,6 @@ def leaver(account):
 def checker(account):
     response = requests.get(f'https://discordapp.com/api/v9/users/@me/library',
                    headers=account.getHeaders())
-    print(r.json())
     if "You need to verify your account in order to perform this action." in str(
             response.content) or "401: Unauthorized" in str(response.content):
         return False
