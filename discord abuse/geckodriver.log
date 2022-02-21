@@ -509,3 +509,156 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1645369209786	Marionette	INFO	Listening on port 57708
 1645369210041	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1645369239633	Marionette	INFO	Stopped listening on port 57708
+1645459238763	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofileRtaVHr"
+1645459240934	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofileRtaVHr\\search.json.mozlz4", (void 0)))
+1645459243587	Marionette	INFO	Listening on port 54006
+1645459244040	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645459264542	Marionette	INFO	Stopped listening on port 54006
+1645459450490	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofile1e0zKN"
+1645459451015	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofile1e0zKN\\search.json.mozlz4", (void 0)))
+1645459453449	Marionette	INFO	Listening on port 54215
+1645459453664	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645459475413	Marionette	INFO	Stopped listening on port 54215
+1645459557680	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofilewMt4lW"
+1645459558222	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofilewMt4lW\\search.json.mozlz4", (void 0)))
+[Parent 552, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:565
+1645459560746	Marionette	INFO	Listening on port 54377
+1645459560863	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/watch_serp.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://discord.com/assets/fcc23cf352bfa6581f4a.js, line 1869: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/fcc23cf352bfa6581f4a.js, line 3622: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/fcc23cf352bfa6581f4a.js, line 3622: unreachable code after return statement
+console.error: "isValidHoverTarget rejected with unexpected reason:"
+console.error: (new Error("Error while calling method getResponseContent: No such actor for ID: server0.conn0.netEvent431", "resource://devtools/client/netmonitor/src/connector/firefox-data-provider.js", 600))
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+console.error: "isValidHoverTarget rejected with unexpected reason:"
+console.error: (new Error("Error while calling method getResponseContent: No such actor for ID: server0.conn0.netEvent3505", "resource://devtools/client/netmonitor/src/connector/firefox-data-provider.js", 600))
+console.error: "isValidHoverTarget rejected with unexpected reason:"
+console.error: (new Error("Error while calling method getResponseContent: No such actor for ID: server0.conn0.netEvent3885", "resource://devtools/client/netmonitor/src/connector/firefox-data-provider.js", 600))
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 327))
+InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment: _createTargetActor/<@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:327:12
+newListener@resource://devtools/shared/event-emitter.js:173:27
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+destroy@resource://devtools/server/actors/targets/window-global.js:743:10
+module.exports/proto.destroy@resource://devtools/server/actors/targets/target-actor-mixin.js:244:30
+instantiate@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:242:26
+handleEvent@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:651:12
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:311:10
+
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 327))
+InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment: _createTargetActor/<@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:327:12
+newListener@resource://devtools/shared/event-emitter.js:173:27
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+destroy@resource://devtools/server/actors/targets/window-global.js:743:10
+module.exports/proto.destroy@resource://devtools/server/actors/targets/target-actor-mixin.js:244:30
+instantiate@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:242:26
+handleEvent@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:651:12
+
+JavaScript warning: https://discord.com/assets/ab7d3bbfc24fc8507678.js, line 1928: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/ab7d3bbfc24fc8507678.js, line 3733: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/ab7d3bbfc24fc8507678.js, line 3733: unreachable code after return statement
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:311:10
+
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 327))
+InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment: _createTargetActor/<@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:327:12
+newListener@resource://devtools/shared/event-emitter.js:173:27
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+destroy@resource://devtools/server/actors/targets/window-global.js:743:10
+module.exports/proto.destroy@resource://devtools/server/actors/targets/target-actor-mixin.js:244:30
+instantiate@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:242:26
+handleEvent@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:651:12
+
+JavaScript warning: https://discord.com/assets/fcc23cf352bfa6581f4a.js, line 1869: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/fcc23cf352bfa6581f4a.js, line 3622: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/fcc23cf352bfa6581f4a.js, line 3622: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 327))
+InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment: _createTargetActor/<@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:327:12
+newListener@resource://devtools/shared/event-emitter.js:173:27
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+destroy@resource://devtools/server/actors/targets/window-global.js:743:10
+module.exports/proto.destroy@resource://devtools/server/actors/targets/target-actor-mixin.js:244:30
+instantiate@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:242:26
+handleEvent@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:651:12
+
+JavaScript warning: https://discord.com/assets/ab7d3bbfc24fc8507678.js, line 1928: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/ab7d3bbfc24fc8507678.js, line 3733: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/ab7d3bbfc24fc8507678.js, line 3733: unreachable code after return statement
+Handler function threw an exception: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannelInternal.remoteAddress]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _onResponseHeader :: line 990"  data: no]
+Stack: _onResponseHeader@resource://devtools/server/actors/network-monitor/network-observer.js:990:5
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:563:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:672:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 990, column: 0
+console.error: ({})
+Handler function threw an exception: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannelInternal.remoteAddress]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _onResponseHeader :: line 990"  data: no]
+Stack: _onResponseHeader@resource://devtools/server/actors/network-monitor/network-observer.js:990:5
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:563:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:672:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 990, column: 0
+console.error: ({})
+Handler function threw an exception: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannelInternal.remoteAddress]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _onResponseHeader :: line 990"  data: no]
+Stack: _onResponseHeader@resource://devtools/server/actors/network-monitor/network-observer.js:990:5
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:563:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:672:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 990, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameParent.jsm, line 217: TypeError: watcher is undefined
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameParent.jsm, line 217: TypeError: watcher is undefined
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameParent.jsm, line 217: TypeError: watcher is undefined
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1645461528934	Marionette	INFO	Stopped listening on port 54377
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+	INFO	Listening on port 55090
+1645460563222	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645460581768	Marionette	INFO	Stopped listening on port 55090
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645460794815	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Администратор\\AppData\\Local\\Temp\\rust_mozprofileJi2K0i"
+1645460795333	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\AppData\\Local\\Temp\\rust_mozprofileJi2K0i\\search.json.mozlz4", (void 0)))
+1645460798034	Marionette	INFO	Listening on port 55296
+1645460798480	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Channel closing: too late to send/recv, messages will be lost
+
+1645460819661	Marionette	INFO	Stopped listening on port 55296

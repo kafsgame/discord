@@ -76,13 +76,15 @@ def inviter(account):
         captchaKey = r.json()['captcha_sitekey']
         print(captchaKey)
         start_server(captchaKey)
-        driver = webdriver.Firefox()
+        driver = webdriver.Firefox('/geckodriver.exe')
         driver.get("http://localhost:5000")
         print("пройдите капчу в открывшемся окне")
         while True:
             captcha = driver.find_element_by_xpath("/html/body/div[1]/iframe").get_attribute("data-hcaptcha-response")
             if captcha != "":
                 break
+        data = {'captcha_key':captcha}
+        r = s.post("https://discord.com/api/v9/invites/{}".format(invite_code), headers=headers, data=data)
         f = open("end.txt", "w")
         f.write("1")
         f.close()
@@ -91,7 +93,6 @@ def inviter(account):
         except Exception:
             pass
         driver.quit()
-        r = s.post("https://discord.com/api/v9/invites/{}".format(invite_code), headers=headers, data={'captcha_key':captcha, 'captcha_sitekey':captchaKey, 'captcha_service': 'hcaptcha'})
         print(r.json())
         if(r.status_code == 200):
             return True
@@ -112,12 +113,12 @@ def leaver(account):
 
 
 def checker(account):
-    response = requests.get(f'https://discordapp.com/api/v9/users/@me/library',
+    r = requests.get(f'https://discordapp.com/api/v9/users/@me/library',
                    headers=account.getHeaders())
     if "You need to verify your account in order to perform this action." in str(
-            response.content) or "401: Unauthorized" in str(response.content):
+            r.content) or "401: Unauthorized" in str(r.content):
         return False
-    elif response.status_code == 401:
+    elif r.status_code == 401:
         return 'Invalid'
     else:
         return True
